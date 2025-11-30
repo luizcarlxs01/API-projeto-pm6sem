@@ -1,0 +1,408 @@
+[
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.DenunciasController",
+    "Method": "AtualizarDenuncia",
+    "RelativePath": "api/Denuncias/AtualizarDenuncia",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "denunciaDTO",
+        "Type": "PM_6SEM_2025.DTO.Denuncia.AtualizarDenunciaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[PM_6SEM_2025.Models.DenunciasModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.DenunciasController",
+    "Method": "BuscarDenunciaPorId",
+    "RelativePath": "api/Denuncias/BuscarDenunciaPorId/{idDenuncia}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDenuncia",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[PM_6SEM_2025.Models.DenunciasModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.DenunciasController",
+    "Method": "BuscarDenunciasPorUsuario",
+    "RelativePath": "api/Denuncias/BuscarDenunciasPorUsuario/{idUsuario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[PM_6SEM_2025.Models.DenunciasModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.DenunciasController",
+    "Method": "CriarDenuncia",
+    "RelativePath": "api/Denuncias/CriarDenuncia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdUsuario",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Logradouro",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Numero",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Complemento",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CEP",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Bairro",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Cidade",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PontoReferencia",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExistemObstaculos",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdProblemaAcessibilidade",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotivosPedido",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Descricao",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArquivoFoto",
+        "Type": "System.Byte[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "arquivoFoto",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[PM_6SEM_2025.Models.DenunciasModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.DenunciasController",
+    "Method": "ExcluirDenuncia",
+    "RelativePath": "api/Denuncias/ExcluirDenuncia/{idDenuncia}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDenuncia",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[PM_6SEM_2025.Models.DenunciasModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.DenunciasController",
+    "Method": "ListarDenuncias",
+    "RelativePath": "api/Denuncias/ListarDenuncias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[PM_6SEM_2025.Models.DenunciasModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProblemasAcessibilidade.Controllers.ProblemasAcessibilidadeController",
+    "Method": "ListarProblemas",
+    "RelativePath": "api/ProblemasAcessibilidade/ListarProblemas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.UsuariosController",
+    "Method": "BuscarUsuarioPorId",
+    "RelativePath": "api/Usuarios/BuscarUsuarioPorId/{idUsuario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[PM_6SEM_2025.Models.UsuariosModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.UsuariosController",
+    "Method": "BuscarUsuarioPorIdDenuncia",
+    "RelativePath": "api/Usuarios/BuscarUsuarioPorIdDenuncia/{idDenuncia}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDenuncia",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[PM_6SEM_2025.Models.UsuariosModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.UsuariosController",
+    "Method": "CriarUsuario",
+    "RelativePath": "api/Usuarios/CriarUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioCriacaoDTO",
+        "Type": "PM_6SEM_2025.DTO.Usuario.UsuarioCriacaoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[PM_6SEM_2025.Models.UsuariosModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.UsuariosController",
+    "Method": "EditarUsuario",
+    "RelativePath": "api/Usuarios/EditarUsuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "editarUsuarioDTO",
+        "Type": "PM_6SEM_2025.DTO.Usuario.EditarUsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[PM_6SEM_2025.Models.UsuariosModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.UsuariosController",
+    "Method": "ExcluirUsuario",
+    "RelativePath": "api/Usuarios/ExcluirUsuario",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdUsuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[PM_6SEM_2025.Models.UsuariosModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.UsuariosController",
+    "Method": "ListaUsuarios",
+    "RelativePath": "api/Usuarios/ListarUsuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[System.Collections.Generic.List\u00601[[PM_6SEM_2025.Models.UsuariosModel, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PM_6SEM_2025.Controllers.UsuariosController",
+    "Method": "Login",
+    "RelativePath": "api/Usuarios/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "PM_6SEM_2025.DTO.Usuario.LoginRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PM_6SEM_2025.Models.ResponseModel\u00601[[PM_6SEM_2025.DTO.Usuario.LoginResponseDTO, PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

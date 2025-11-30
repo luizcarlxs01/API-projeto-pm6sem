@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A99BA90C-BC23-4CB1-9FFD-79C660D7BCFC}|PM-6SEM-2025\\PM-6SEM-2025.csproj|c:\\users\\luiz\\source\\repos\\pm-6sem-2025\\pm-6sem-2025\\services\\usuarios\\usuariosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A99BA90C-BC23-4CB1-9FFD-79C660D7BCFC}|PM-6SEM-2025\\PM-6SEM-2025.csproj|solutionrelative:pm-6sem-2025\\services\\usuarios\\usuariosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A99BA90C-BC23-4CB1-9FFD-79C660D7BCFC}|PM-6SEM-2025\\PM-6SEM-2025.csproj|c:\\users\\luiz\\source\\repos\\pm-6sem-2025\\pm-6sem-2025\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A99BA90C-BC23-4CB1-9FFD-79C660D7BCFC}|PM-6SEM-2025\\PM-6SEM-2025.csproj|solutionrelative:pm-6sem-2025\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A99BA90C-BC23-4CB1-9FFD-79C660D7BCFC}|PM-6SEM-2025\\PM-6SEM-2025.csproj|c:\\users\\luiz\\source\\repos\\pm-6sem-2025\\pm-6sem-2025\\services\\usuarios\\iusuariosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A99BA90C-BC23-4CB1-9FFD-79C660D7BCFC}|PM-6SEM-2025\\PM-6SEM-2025.csproj|solutionrelative:pm-6sem-2025\\services\\usuarios\\iusuariosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A99BA90C-BC23-4CB1-9FFD-79C660D7BCFC}|PM-6SEM-2025\\PM-6SEM-2025.csproj|c:\\users\\luiz\\source\\repos\\pm-6sem-2025\\pm-6sem-2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A99BA90C-BC23-4CB1-9FFD-79C660D7BCFC}|PM-6SEM-2025\\PM-6SEM-2025.csproj|solutionrelative:pm-6sem-2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A99BA90C-BC23-4CB1-9FFD-79C660D7BCFC}|PM-6SEM-2025\\PM-6SEM-2025.csproj|c:\\users\\luiz\\source\\repos\\pm-6sem-2025\\pm-6sem-2025\\dto\\denuncia\\denunciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A99BA90C-BC23-4CB1-9FFD-79C660D7BCFC}|PM-6SEM-2025\\PM-6SEM-2025.csproj|solutionrelative:pm-6sem-2025\\dto\\denuncia\\denunciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Program.cs",
+              "RelativeDocumentMoniker": "PM-6SEM-2025\\Program.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Program.cs",
+              "RelativeToolTip": "PM-6SEM-2025\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T03:11:34.105Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "PM-6SEM-2025\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "PM-6SEM-2025\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAYwEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:30:22.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosService.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Services\\Usuarios\\UsuariosService.cs",
+              "RelativeDocumentMoniker": "PM-6SEM-2025\\Services\\Usuarios\\UsuariosService.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Services\\Usuarios\\UsuariosService.cs",
+              "RelativeToolTip": "PM-6SEM-2025\\Services\\Usuarios\\UsuariosService.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAUwNMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:28:51.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUsuariosService.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Services\\Usuarios\\IUsuariosService.cs",
+              "RelativeDocumentMoniker": "PM-6SEM-2025\\Services\\Usuarios\\IUsuariosService.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Services\\Usuarios\\IUsuariosService.cs",
+              "RelativeToolTip": "PM-6SEM-2025\\Services\\Usuarios\\IUsuariosService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T06:28:26.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DenunciaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\DTO\\Denuncia\\DenunciaDTO.cs",
+              "RelativeDocumentMoniker": "PM-6SEM-2025\\DTO\\Denuncia\\DenunciaDTO.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\DTO\\Denuncia\\DenunciaDTO.cs",
+              "RelativeToolTip": "PM-6SEM-2025\\DTO\\Denuncia\\DenunciaDTO.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T05:17:09.962Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

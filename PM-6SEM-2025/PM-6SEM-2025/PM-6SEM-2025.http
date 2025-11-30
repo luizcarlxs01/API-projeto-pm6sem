@@ -1,0 +1,6 @@
+@PM_6SEM_2025_HostAddress = http://localhost:5275
+
+GET {{PM_6SEM_2025_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
