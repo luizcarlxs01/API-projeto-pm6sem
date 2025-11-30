@@ -1,0 +1,69 @@
+CREATE TABLE Usuarios (
+    IdUsuario INT IDENTITY PRIMARY KEY,
+    Nome VARCHAR(150) NOT NULL,
+    Email VARCHAR(150) NOT NULL UNIQUE,
+    SenhaHash VARCHAR(255) NOT NULL,
+    Telefone VARCHAR(20) NULL,
+    DataCadastro DATETIME NOT NULL DEFAULT GETDATE()
+
+CREATE TABLE Denuncias (
+    IdDenuncia INT IDENTITY PRIMARY KEY,
+    IdUsuario INT NULL,  -- pode ser nulo se for denúncia anônima
+
+    Logradouro VARCHAR(200) NOT NULL,
+    Numero VARCHAR(10) NOT NULL,
+    Complemento VARCHAR(100) NULL,
+    CEP VARCHAR(15) NOT NULL,
+    Bairro VARCHAR(100) NOT NULL,
+    Cidade VARCHAR(100) NOT NULL,
+    Estado CHAR(2) NOT NULL,
+
+    PontoReferencia VARCHAR(200) NULL,
+    Acessibilidade BIT NOT NULL, -- 1 = Sim, 0 = Não
+    Descricao VARCHAR(MAX) NULL,
+
+    ProtocoloPrefeitura VARCHAR(50) NULL,
+    Status VARCHAR(20) NOT NULL DEFAULT 'Pendente',
+    DataCriacao DATETIME NOT NULL DEFAULT GETDATE(),
+
+    CONSTRAINT FK_Denuncias_Usuarios FOREIGN KEY (IdUsuario) REFERENCES Usuarios (IdUsuario)
+);
+
+CREATE TABLE ProblemasAcessibilidade (
+    IdProblema INT IDENTITY PRIMARY KEY,
+    Descricao VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE MotivosPedido (
+    IdMotivo INT IDENTITY PRIMARY KEY,
+    Descricao VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE DenunciaProblema (
+    IdDenuncia INT NOT NULL,
+    IdProblema INT NOT NULL,
+
+    CONSTRAINT PK_DenunciaProblema PRIMARY KEY (IdDenuncia, IdProblema),
+    CONSTRAINT FK_DenunciaProblema_Denuncia FOREIGN KEY (IdDenuncia) REFERENCES Denuncias(IdDenuncia),
+    CONSTRAINT FK_DenunciaProblema_Problema FOREIGN KEY (IdProblema) REFERENCES ProblemasAcessibilidade(IdProblema)
+);
+
+CREATE TABLE DenunciaMotivo (
+    IdDenuncia INT NOT NULL,
+    IdMotivo INT NOT NULL,
+
+    CONSTRAINT PK_DenunciaMotivo PRIMARY KEY (IdDenuncia, IdMotivo),
+    CONSTRAINT FK_DenunciaMotivo_Denuncia FOREIGN KEY (IdDenuncia) REFERENCES Denuncias(IdDenuncia),
+    CONSTRAINT FK_DenunciaMotivo_Motivo FOREIGN KEY (IdMotivo) REFERENCES MotivosPedido(IdMotivo)
+);
+
+CREATE TABLE DenunciaArquivos (
+    IdArquivo INT IDENTITY PRIMARY KEY,
+    IdDenuncia INT NOT NULL,
+    NomeArquivo VARCHAR(200) NOT NULL,
+    TipoArquivo VARCHAR(50) NOT NULL,
+    Arquivo VARBINARY(MAX) NOT NULL,
+    DataUpload DATETIME NOT NULL DEFAULT GETDATE(),
+
+    CONSTRAINT FK_DenunciaArquivos_Denuncia FOREIGN KEY (IdDenuncia) REFERENCES Denuncias (IdDenuncia)
+);
