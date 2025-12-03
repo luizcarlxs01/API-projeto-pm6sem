@@ -1,0 +1,929 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "PM-6SEM-2025, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Denuncias/ListarDenuncias": {
+      "get": {
+        "tags": [
+          "Denuncias"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/DenunciasModelListResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Denuncias/BuscarDenunciaPorId/{idDenuncia}": {
+      "get": {
+        "tags": [
+          "Denuncias"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idDenuncia",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/DenunciasModelResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Denuncias/BuscarDenunciasPorUsuario/{idUsuario}": {
+      "get": {
+        "tags": [
+          "Denuncias"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idUsuario",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/DenunciasModelListResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Denuncias/CriarDenuncia": {
+      "post": {
+        "tags": [
+          "Denuncias"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CriarDenunciaDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/DenunciasModelListResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Denuncias/AtualizarDenuncia": {
+      "put": {
+        "tags": [
+          "Denuncias"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AtualizarDenunciaDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/DenunciasModelListResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Denuncias/ExcluirDenuncia/{idDenuncia}": {
+      "delete": {
+        "tags": [
+          "Denuncias"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idDenuncia",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/DenunciasModelListResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/ProblemasAcessibilidade/ListarProblemas": {
+      "get": {
+        "tags": [
+          "ProblemasAcessibilidade"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Usuarios/ListarUsuarios": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/UsuariosModelListResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios/BuscarUsuarioPorId/{idUsuario}": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idUsuario",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/UsuariosModelResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios/BuscarUsuarioPorIdDenuncia/{idDenuncia}": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idDenuncia",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/UsuariosModelResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios/CriarUsuario": {
+      "post": {
+        "tags": [
+          "Usuarios"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UsuarioCriacaoDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/UsuariosModelListResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios/EditarUsuario": {
+      "put": {
+        "tags": [
+          "Usuarios"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/EditarUsuarioDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/UsuariosModelListResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios/ExcluirUsuario": {
+      "delete": {
+        "tags": [
+          "Usuarios"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "IdUsuario",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/UsuariosModelListResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios/Login": {
+      "post": {
+        "tags": [
+          "Usuarios"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/LoginRequestDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/LoginResponseDTOResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios/Me": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/UsuariosModelResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios/AlterarSenha": {
+      "post": {
+        "tags": [
+          "Usuarios"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AlterarSenhaDTO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/BooleanResponseModel"
+            }
+          }
+        }
+      }
+    },
+    "/api/Usuarios/TornarAdmin/{idUsuario}": {
+      "put": {
+        "tags": [
+          "Usuarios"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idUsuario",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/UsuariosModelResponseModel"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AlterarSenhaDTO": {
+      "required": [
+        "novaSenha",
+        "senhaAtual"
+      ],
+      "type": "object",
+      "properties": {
+        "senhaAtual": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "novaSenha": {
+          "minLength": 8,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "AtualizarDenunciaDTO": {
+      "required": [
+        "idDenuncia"
+      ],
+      "type": "object",
+      "properties": {
+        "idDenuncia": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "protocoloPrefeitura": {
+          "maxLength": 50,
+          "type": "string"
+        },
+        "status": {
+          "maxLength": 20,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "BooleanResponseModel": {
+      "type": "object",
+      "properties": {
+        "dados": {
+          "type": "boolean"
+        },
+        "mensagem": {
+          "type": "string"
+        },
+        "status": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CriarDenunciaDTO": {
+      "required": [
+        "bairro",
+        "cep",
+        "cidade",
+        "estado",
+        "existemObstaculos",
+        "logradouro",
+        "numero"
+      ],
+      "type": "object",
+      "properties": {
+        "idUsuario": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "logradouro": {
+          "maxLength": 200,
+          "minLength": 1,
+          "type": "string"
+        },
+        "numero": {
+          "maxLength": 10,
+          "minLength": 1,
+          "type": "string"
+        },
+        "complemento": {
+          "maxLength": 100,
+          "type": "string"
+        },
+        "cep": {
+          "maxLength": 15,
+          "minLength": 1,
+          "type": "string"
+        },
+        "bairro": {
+          "maxLength": 100,
+          "minLength": 1,
+          "type": "string"
+        },
+        "cidade": {
+          "maxLength": 100,
+          "minLength": 1,
+          "type": "string"
+        },
+        "estado": {
+          "maxLength": 2,
+          "minLength": 1,
+          "type": "string"
+        },
+        "pontoReferencia": {
+          "maxLength": 200,
+          "type": "string"
+        },
+        "existemObstaculos": {
+          "type": "boolean"
+        },
+        "idProblemaAcessibilidade": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "motivosPedido": {
+          "maxLength": 500,
+          "type": "string"
+        },
+        "descricao": {
+          "maxLength": 1000,
+          "type": "string"
+        },
+        "arquivoFotoBase64": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "DenunciasModel": {
+      "type": "object",
+      "properties": {
+        "idDenuncia": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idUsuario": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "usuario": {
+          "$ref": "#/definitions/UsuariosModel"
+        },
+        "logradouro": {
+          "type": "string"
+        },
+        "numero": {
+          "type": "string"
+        },
+        "complemento": {
+          "type": "string"
+        },
+        "cep": {
+          "type": "string"
+        },
+        "bairro": {
+          "type": "string"
+        },
+        "cidade": {
+          "type": "string"
+        },
+        "estado": {
+          "type": "string"
+        },
+        "pontoReferencia": {
+          "type": "string"
+        },
+        "existemObstaculos": {
+          "type": "boolean"
+        },
+        "idProblemaAcessibilidade": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "problemaAcessibilidade": {
+          "$ref": "#/definitions/ProblemasAcessibilidadeModel"
+        },
+        "motivosPedido": {
+          "type": "string"
+        },
+        "descricao": {
+          "type": "string"
+        },
+        "arquivoFoto": {
+          "type": "string"
+        },
+        "protocoloPrefeitura": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "dataDenuncia": {
+          "format": "date-time",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "DenunciasModelListResponseModel": {
+      "type": "object",
+      "properties": {
+        "dados": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DenunciasModel"
+          }
+        },
+        "mensagem": {
+          "type": "string"
+        },
+        "status": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "DenunciasModelResponseModel": {
+      "type": "object",
+      "properties": {
+        "dados": {
+          "$ref": "#/definitions/DenunciasModel"
+        },
+        "mensagem": {
+          "type": "string"
+        },
+        "status": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EditarUsuarioDTO": {
+      "type": "object",
+      "properties": {
+        "idUsuario": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "telefone": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "LoginRequestDTO": {
+      "required": [
+        "email",
+        "senhaHash"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "senhaHash": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "LoginResponseDTO": {
+      "type": "object",
+      "properties": {
+        "idUsuario": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "perfil": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "LoginResponseDTOResponseModel": {
+      "type": "object",
+      "properties": {
+        "dados": {
+          "$ref": "#/definitions/LoginResponseDTO"
+        },
+        "mensagem": {
+          "type": "string"
+        },
+        "status": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ProblemasAcessibilidadeModel": {
+      "required": [
+        "descricao"
+      ],
+      "type": "object",
+      "properties": {
+        "idProblemaAcessibilidade": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "descricao": {
+          "maxLength": 150,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UsuarioCriacaoDTO": {
+      "required": [
+        "email",
+        "nome",
+        "senhaHash"
+      ],
+      "type": "object",
+      "properties": {
+        "nome": {
+          "maxLength": 100,
+          "minLength": 1,
+          "type": "string"
+        },
+        "email": {
+          "format": "email",
+          "maxLength": 150,
+          "minLength": 1,
+          "type": "string"
+        },
+        "senhaHash": {
+          "maxLength": 255,
+          "minLength": 8,
+          "type": "string"
+        },
+        "telefone": {
+          "format": "tel",
+          "maxLength": 20,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UsuariosModel": {
+      "required": [
+        "email",
+        "nome",
+        "perfil",
+        "senhaHash"
+      ],
+      "type": "object",
+      "properties": {
+        "idUsuario": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nome": {
+          "maxLength": 100,
+          "minLength": 1,
+          "type": "string"
+        },
+        "email": {
+          "maxLength": 100,
+          "minLength": 1,
+          "type": "string"
+        },
+        "senhaHash": {
+          "maxLength": 255,
+          "minLength": 1,
+          "type": "string"
+        },
+        "telefone": {
+          "maxLength": 20,
+          "type": "string"
+        },
+        "dataCadastro": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "perfil": {
+          "maxLength": 50,
+          "minLength": 1,
+          "type": "string"
+        },
+        "denuncias": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DenunciasModel"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "UsuariosModelListResponseModel": {
+      "type": "object",
+      "properties": {
+        "dados": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/UsuariosModel"
+          }
+        },
+        "mensagem": {
+          "type": "string"
+        },
+        "status": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UsuariosModelResponseModel": {
+      "type": "object",
+      "properties": {
+        "dados": {
+          "$ref": "#/definitions/UsuariosModel"
+        },
+        "mensagem": {
+          "type": "string"
+        },
+        "status": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

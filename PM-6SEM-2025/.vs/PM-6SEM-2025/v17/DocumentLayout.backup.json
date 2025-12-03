@@ -22,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Program.cs",
+              "RelativeDocumentMoniker": "PM-6SEM-2025\\Program.cs",
+              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Program.cs",
+              "RelativeToolTip": "PM-6SEM-2025\\Program.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAiwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T04:42:08.976Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -32,7 +45,7 @@
               "RelativeDocumentMoniker": "PM-6SEM-2025\\Data\\PmContext.cs",
               "ToolTip": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Data\\PmContext.cs",
               "RelativeToolTip": "PM-6SEM-2025\\Data\\PmContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAswBsAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA7wBsAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T06:55:28.524Z"
             },
@@ -44,21 +57,9 @@
               "RelativeDocumentMoniker": "PM-6SEM-2025\\appsettings.json",
               "ToolTip": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\appsettings.json",
               "RelativeToolTip": "PM-6SEM-2025\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-28T06:54:45.604Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Program.cs",
-              "RelativeDocumentMoniker": "PM-6SEM-2025\\Program.cs",
-              "ToolTip": "C:\\Users\\Luiz\\source\\repos\\PM-6SEM-2025\\PM-6SEM-2025\\Program.cs",
-              "RelativeToolTip": "PM-6SEM-2025\\Program.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAiwFsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T17:16:35.845Z",
+              "WhenOpened": "2025-11-28T06:54:45.604Z",
               "EditorCaption": ""
             }
           ]

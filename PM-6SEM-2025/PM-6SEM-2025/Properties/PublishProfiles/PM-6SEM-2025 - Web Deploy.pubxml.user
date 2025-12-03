@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAoSXs11QD60Gp7xFL2KSlugAAAAACAAAAAAAQZgAAAAEAACAAAABs8ItgAfv0ZYNW1UyDSzxIkWIIFURT8cPp/ejjwBhFBAAAAAAOgAAAAAIAACAAAACBetd9WR04gl3TmR6zfaj1bJP8dfjqVry5Sjh/MAVey4AAAAAQaPobWsj2ko5KnV87zrZ/O3P8Jz/rCKAuyru+EU5qg00Q1AmbMn96koI3BMWNO5o1bbFo3Abl6NWWGbdEdOQlgz5sp5qD97bJsaaOMPs22lq2vSdIJs8ArGz6hjH8qC419uuDXL6PcocR6jk/GNY9L8RBJe6stzXJwSF86WU+60AAAADwlUOMhcnj8w3KGBxvEWXFLj2/EbQTO3vk2rHCP1Sr6gk5zYs+RSdfRDDVYmH+7JgcWc66Qz1fmEOD5Tpfb6vy</EncryptedPassword>
+    <History>True|2025-11-30T04:55:53.5975777Z||;True|2025-11-30T01:12:56.4871837-03:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:pm-6sem.database.windows.net,1433%3bInitial Catalog=PM_6SEM_2025%3bPersist Security Info=False%3bUser ID=luiz_carlxs01%3bPassword=140969Lc!%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using PM_6SEM_2025.Data;
 using PM_6SEM_2025.Services.Denuncias;
 using PM_6SEM_2025.Services.Usuarios;
@@ -7,7 +7,6 @@ using Microsoft.IdentityModel.Tokens;
 using PM_6SEM_2025.Services.Auth;
 using System.Text;
 using System.Text.Json.Serialization;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -54,21 +53,18 @@ builder.Services.AddDbContext<PmContext>(options =>
 // ===========================================
 builder.Services.AddScoped<IUsuariosService, UsuariosService>();
 builder.Services.AddScoped<IDenunciasService, DenunciasService>();
-
-// Serviço de geração de token JWT
-builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<ITokenService, TokenService>(); // Serviço de geração de token JWT
 
 // ===========================================
 // AUTH + JWT (lendo do appsettings)
 // ===========================================
-var jwtKey = builder.Configuration["Jwt:Key"];
-var jwtIssuer = builder.Configuration["Jwt:Issuer"];
-var jwtAudience = builder.Configuration["Jwt:Audience"];
+var jwtSection = builder.Configuration.GetSection("Jwt");
+var jwtKey = jwtSection["Key"];
+var jwtIssuer = jwtSection["Issuer"];
+var jwtAudience = jwtSection["Audience"];
 
 if (string.IsNullOrWhiteSpace(jwtKey))
-{
     throw new InvalidOperationException("Configure Jwt:Key no appsettings.json.");
-}
 
 builder.Services
     .AddAuthentication(options =>
@@ -78,7 +74,7 @@ builder.Services
     })
     .AddJwtBearer(options =>
     {
-        // Em produção, ideal manter como true e usar HTTPS com certificado confiável
+        // Em produção, mantenha HTTPS configurado corretamente no Azure
         options.RequireHttpsMetadata = true;
         options.SaveToken = true;
         options.TokenValidationParameters = new TokenValidationParameters
@@ -93,12 +89,22 @@ builder.Services
         };
     });
 
+// Autorização (se quiser políticas, adiciona aqui depois)
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
 // ===========================================
 // PIPELINE
 // ===========================================
+
+// Se quiser Swagger também em produção, pode tirar o if
 if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+else
 {
     app.UseSwagger();
     app.UseSwaggerUI();

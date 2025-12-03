@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <History>False|2025-11-30T03:48:16.9182993Z||;True|2025-11-30T00:25:34.0403319-03:00||;True|2025-11-30T00:09:20.3866379-03:00||;</History>
+    <LastFailureDetails />
+    <EncryptedPassword />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:pm-6sem.database.windows.net%3bAuthentication=Active Directory Default%3bDatabase=PM_6SEM_2025%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

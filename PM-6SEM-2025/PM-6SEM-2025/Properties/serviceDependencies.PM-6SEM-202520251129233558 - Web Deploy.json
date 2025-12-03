@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/PM-6SEM-2025api/apis/PM-6SEM-2025",
+      "type": "apis.azure"
+    },
+    "identityapp1": {
+      "connectionInfo": "Registro do aplicativo: pm-6sem-2025, Locatário: Diretório Padrão (Luizbarbosaf288outlook.onmicrosoft.com - Microsoft Entra ID)",
+      "secretStore": "AzureAppSettings",
+      "type": "identityapp.secretStore",
+      "connectionId": "AzureAD:ClientSecret"
+    },
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('serviceConnectorResourceGroupName')]/providers/Microsoft.Web/sites/PM-6SEM-202520251129233558/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsDefaultConnection1_23A4273DDE",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/pm-6sem/databases/PM_6SEM_2025",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:DefaultConnection1",
+      "dynamicId": null
+    }
+  }
+}
